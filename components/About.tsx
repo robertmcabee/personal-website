@@ -1,8 +1,10 @@
 function About() {
   return (
     <div className="py-8 px-4 bg-green-100 flex justify-center">
-      <div className="w-80 bg-green-200">
-        <p className="">
+      <div className="px-4 sm:max-w-lg text-green-900">
+        <h2 className="text-xl font-bold">About Me</h2>
+
+        <p className="pt-4">
           I&#39;m from Bozeman, MT. When I&#39;m not coding I love hiking,
           listening to music and video games.
         </p>
