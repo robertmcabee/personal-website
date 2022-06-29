@@ -2,6 +2,8 @@ import Head from "next/head";
 import Header from "../components/Header";
 import About from "../components/About";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -12,9 +14,15 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="md:flex justify-center">
-        <About />
-        <Skills />
+      <main>
+        <div className="flex justify-center bg-cyan-100 text-cyan-900">
+          <div className="max-w-4xl md:flex md:mx-16 gap-8">
+            <About />
+            <Skills />
+          </div>
+        </div>
+        <Projects />
+        <Contact />
       </main>
     </div>
   );
