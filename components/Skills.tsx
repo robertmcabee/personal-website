@@ -1,8 +1,8 @@
 function Skills() {
   return (
-    <div className="py-8 px-4 bg-cyan-100 text-cyan-900 flex justify-center">
-      <div className="px-4 sm:max-w-lg text-cyan-900">
-        <h2 className="text-xl font-bold">Technologies</h2>
+    <div className="py-8 md:py-16 px-8 md:px-0 w-full flex justify-center">
+      <div className="">
+        <h2 className="text-2xl md:text-3xl font-bold">Technologies</h2>
 
         <p className="pt-4">
           I do my best to keep up with the best technologies - I&#39;m always
@@ -17,7 +17,7 @@ function Skills() {
           <li className="list-disc ml-3">NextJS</li>
           <li className="list-disc ml-3">Git</li>
           <li className="list-disc ml-3">Tailwind</li>
-          <li className="list-disc ml-3">Semantic HTML</li>
+          <li className="list-disc ml-3">Jest</li>
         </ul>
       </div>
     </div>

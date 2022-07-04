@@ -16,7 +16,8 @@ function Shape({ shape }: { shape: shape }) {
     } else if (shape === "X") {
       style += " w-full h-full bg-";
     } else if (shape === "O") {
-      style += " border-[1rem] md:border-[2rem] w-full h-full border-";
+      style +=
+        " border-[1rem] sm:border-[1.5rem] md:border-[2rem] w-full h-full border-";
     }
     if (Math.random() < 0.5) {
       style += "primary500";
@@ -27,7 +28,7 @@ function Shape({ shape }: { shape: shape }) {
   }
 
   return (
-    <div className="w-16 md:w-32 h-16 md:h-32">
+    <div className="w-16 sm:w-24 md:w-32 h-16 sm:h-24 md:h-32">
       <div className={getStyle(shape)}></div>
     </div>
   );

@@ -5,9 +5,10 @@ interface Props {
   rows: number;
   cols: number;
   imbedParagraph: boolean;
+  animate: boolean;
 }
 
-function Grid({ rows, cols, imbedParagraph }: Props) {
+function Grid({ rows, cols, imbedParagraph, animate }: Props) {
   const [tick, setTick] = useState(0);
 
   function refresh() {
@@ -15,15 +16,15 @@ function Grid({ rows, cols, imbedParagraph }: Props) {
     if (tick > 1) return;
     setTimeout(() => {
       setTick(tick + 1);
-      console.log(tick);
     }, 1200);
   }
 
   //generate a grid where each square can extend it shape into adjacent spaces
   function generateGrid(x: number, y: number, imbedParagraph: boolean) {
-    refresh();
+    if (animate) refresh();
     let reservedSquares: any[] = [];
     if (imbedParagraph) {
+      //for mobile header
       reservedSquares = [
         "3,0",
         "3,1",
@@ -92,7 +93,7 @@ function Grid({ rows, cols, imbedParagraph }: Props) {
   return (
     <>
       <div
-        className="grid max-w-fit"
+        className="grid max-w-fit justify-center max-h-fit overflow-hidden"
         style={{ gridTemplateColumns: `repeat(${rows}, 1fr)` }}
       >
         {generateGrid(cols, rows, imbedParagraph).map((row, indexX) => {
@@ -101,8 +102,8 @@ function Grid({ rows, cols, imbedParagraph }: Props) {
           });
         })}
         {imbedParagraph ? (
-          <div className="absolute opacity-100 translate-y-[150%] bg-base w-64 h-32">
-            <p className="px-8 py-4 text-center">
+          <div className="absolute opacity-100 translate-y-[150%] bg-base w-64 sm:w-72 h-32 sm:h-48">
+            <p className="px-8 py-4 sm:py-10 sm:text-lg text-center">
               I&#39;m Robert, a frontend developer passionate about elegant code
               and beautiful design.
             </p>
