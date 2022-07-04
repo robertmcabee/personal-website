@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProjectCard from "./ProjectCard";
 import easybankImage from "../images/easybank-screenshot.webp";
 import findipImage from "../images/find-ip-screenshot.webp";
 import easyhabitImage from "../images/easyhabit.webp";
@@ -6,10 +7,10 @@ import frontendresourcesImage from "../images/frontendresources-screenshot.webp"
 
 function Projects() {
   return (
-    <section className="bg-gradient-to-t from-green-100 to-cyan-100 md:px-16 px-8">
-      <div className="py-8 text-green-800 flex justify-center">
+    <section className="md:px-16 px-8 md:pt-8 text-cyan-900">
+      <div className="py-8 flex justify-center">
         <div className="max-w-4xl">
-          <h2 className="text-xl font-bold">Projects</h2>
+          <h2 className="text-2xl md:text-3xl font-bold">Projects</h2>
           <p className="pt-4">
             These are a few of my past projects. More projects and additional
             information can be found at my Github profile, if you&#39;re
@@ -18,123 +19,73 @@ function Projects() {
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center md:pt-4">
         <div className="max-w-fit grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-4 md:gap-8 justify-around">
-          <article className="max-w-md bg-white rounded-3xl shadow-2xl flex flex-col">
-            <div className="relative rounded-t-3xl h-48 bg-black">
-              <Image
-                src={frontendresourcesImage}
-                alt="findip Screenshot"
-                className="rounded-t-3xl"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <h3 className="py-4 px-6 text-lg font-bold">Find IP</h3>
-            <p className=" px-6">
-              Enter an ip address and see where it is on the map. Built using
-              two different APIs in conjuction with React and Tailwind CSS.
-            </p>
-            <a
-              href="####"
-              className="text-cyan-500 self px-6 pt-8 font-bold transition-all hover:text-cyan-300"
-            >
-              Github Repository
-            </a>
-            <a
-              href="#####"
-              className="text-cyan-500 self px-6 pt-2 pb-6 font-bold transition-all hover:text-cyan-300"
-            >
-              See it Live
-            </a>
-          </article>
+          <ProjectCard
+            title={"EasyHabit"}
+            description={
+              "An intuitive open-source habit tracker built with Typescript, React and the Date-FNS library."
+            }
+            githubURL={"https://github.com/robertmcabee/EasyHabit"}
+            liveURL={"https://easyhabit.netlify.app/"}
+          >
+            <Image
+              src={easyhabitImage}
+              alt="findip Screenshot"
+              className="rounded-t-3xl"
+              layout="fill"
+              objectFit="cover"
+            />
+          </ProjectCard>
 
-          <article className="max-w-md bg-white rounded-3xl shadow-2xl flex flex-col">
-            <div className="relative rounded-t-3xl h-48 bg-black">
-              <Image
-                src={findipImage}
-                alt="findip Screenshot"
-                className="rounded-t-3xl"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <h3 className="py-4 px-6 text-lg font-bold">Find IP</h3>
-            <p className=" px-6">
-              Enter an ip address and see where it is on the map. Built using
-              two different APIs in conjuction with React and Tailwind CSS.
-            </p>
-            <a
-              href="####"
-              className="text-cyan-500 self px-6 pt-8 font-bold transition-all hover:text-cyan-300"
-            >
-              Github Repository
-            </a>
-            <a
-              href="#####"
-              className="text-cyan-500 self px-6 pt-2 pb-6 font-bold transition-all hover:text-cyan-300"
-            >
-              See it Live
-            </a>
-          </article>
+          <ProjectCard
+            title={"Front-End Resources"}
+            description={
+              "A collection of free modern web development resources. Built with Typescript, React, Next.js & DaisyUI."
+            }
+            githubURL={"https://github.com/robertmcabee/Front-End-Resources"}
+            liveURL={"https://webdevhelp.netlify.app/"}
+          >
+            <Image
+              src={frontendresourcesImage}
+              alt="findip Screenshot"
+              className="rounded-t-3xl"
+              layout="fill"
+              objectFit="cover"
+            />
+          </ProjectCard>
 
-          <article className="max-w-md bg-white rounded-3xl shadow-2xl flex flex-col">
-            <div className="relative rounded-t-3xl h-48 bg-black">
-              <Image
-                src={easybankImage}
-                alt="findip Screenshot"
-                className="rounded-t-3xl"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <h3 className="py-4 px-6 text-lg font-bold">Find IP</h3>
-            <p className=" px-6">
-              Enter an ip address and see where it is on the map. Built using
-              two different APIs in conjuction with React and Tailwind CSS.
-            </p>
-            <a
-              href="####"
-              className="text-cyan-500 self px-6 pt-8 font-bold transition-all hover:text-cyan-300"
-            >
-              Github Repository
-            </a>
-            <a
-              href="#####"
-              className="text-cyan-500 self px-6 pt-2 pb-6 font-bold transition-all hover:text-cyan-300"
-            >
-              See it Live
-            </a>
-          </article>
+          <ProjectCard
+            title={"Digital Banking Landing Page"}
+            description={"A Responsive Landing Page built with Tailwind CSS."}
+            githubURL={"https://github.com/robertmcabee/easybank"}
+            liveURL={"https://easybankrm.netlify.app/"}
+          >
+            <Image
+              src={easybankImage}
+              alt="findip Screenshot"
+              className="rounded-t-3xl"
+              layout="fill"
+              objectFit="cover"
+            />
+          </ProjectCard>
 
-          <article className="max-w-md bg-white rounded-3xl shadow-2xl flex flex-col">
-            <div className="relative rounded-t-3xl h-48 bg-black">
-              <Image
-                src={easyhabitImage}
-                alt="findip Screenshot"
-                className="rounded-t-3xl"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <h3 className="py-4 px-6 text-lg font-bold">Find IP</h3>
-            <p className=" px-6">
-              Enter an ip address and see where it is on the map. Built using
-              two different APIs in conjuction with React and Tailwind CSS.
-            </p>
-            <a
-              href="####"
-              className="text-cyan-500 self px-6 pt-8 font-bold transition-all hover:text-cyan-300"
-            >
-              Github Repository
-            </a>
-            <a
-              href="#####"
-              className="text-cyan-500 self px-6 pt-2 pb-6 font-bold transition-all hover:text-cyan-300"
-            >
-              See it Live
-            </a>
-          </article>
+          <ProjectCard
+            title={"Find IP"}
+            description={
+              "Enter an ip address and see where it is on the map. Built using two different APIs in conjuction with React and Tailwind CSS."
+            }
+            githubURL={"https://github.com/robertmcabee/find-ip"}
+            liveURL={"https://findip.netlify.app/"}
+          >
+            <Image
+              src={findipImage}
+              alt="findip Screenshot"
+              className="rounded-t-3xl"
+              layout="fill"
+              objectFit="cover"
+            />
+          </ProjectCard>
         </div>
       </div>
     </section>
