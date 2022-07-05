@@ -1,14 +1,14 @@
 function Footer() {
   return (
     <footer className="pt-8 pb-4 px-8 text-green-900 flex flex-col sm:flex-row align-middle justify-between h-min">
-      <ul className="pb-3 flex justify-center gap-4">
+      <div className="pb-3 flex justify-center gap-4">
         <a
           target="_blank"
           href="https://twitter.com/RobertTheMcAbee"
           aria-label="Twitter"
           rel="noreferrer"
         >
-          <li className="hover:shadow-lg bg-green-200 hover:bg-green-400 duration-300 h-min w-min rounded-full p-3 border-4 border-base hover:border-green-200">
+          <div className="hover:shadow-lg bg-green-200 hover:bg-green-400 duration-300 h-min w-min rounded-full p-3 border-4 border-base hover:border-green-200">
             <svg
               width="24"
               height="24"
@@ -24,7 +24,7 @@ function Footer() {
                 strokeLinejoin="round"
               />
             </svg>
-          </li>
+          </div>
         </a>
         <a
           target="_blank"
@@ -32,7 +32,7 @@ function Footer() {
           aria-label="Github"
           rel="noreferrer"
         >
-          <li className="hover:shadow-lg bg-green-200 hover:bg-green-400 duration-300 h-min w-min rounded-full p-3 border-4 border-base hover:border-green-200">
+          <div className="hover:shadow-lg bg-green-200 hover:bg-green-400 duration-300 h-min w-min rounded-full p-3 border-4 border-base hover:border-green-200">
             <svg
               width="24"
               height="24"
@@ -54,9 +54,9 @@ function Footer() {
                 strokeLinejoin="round"
               />
             </svg>
-          </li>
+          </div>
         </a>
-      </ul>
+      </div>
       <p className="pt-3 text-center sm:text-lg font-bold">
         Let&#39;s build something together.
       </p>
