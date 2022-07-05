@@ -16,11 +16,14 @@ module.exports = {
         secondary500: "rgb(var(--color-secondary500) / <alpha-value>)",
       },
       animation: {
-        fadein: "fadein 600ms ease-in-out",
+        fadein: "fadein 1000ms ease-in-out",
       },
       keyframes: {
         fadein: {
           "0%": {
+            opacity: "0",
+          },
+          "20%": {
             opacity: "0",
           },
           "100%": {

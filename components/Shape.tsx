@@ -3,7 +3,7 @@ type shape = "N" | "S" | "W" | "E" | "X" | "O";
 function Shape({ shape }: { shape: shape }) {
   function getStyle(shape: shape) {
     let style =
-      "opacity-50 transition-all duration-300 relative p-4 md:p-8 rounded-full";
+      "opacity-50 transition-all duration-[600ms] relative p-4 md:p-8 rounded-full";
 
     if (shape === "N") {
       style += " w-full h-[200%] bg-";

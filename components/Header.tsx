@@ -18,7 +18,7 @@ function Header() {
       <div className="pt-4 md:pt-16 max-h-min hidden md:flex w-full justify-center gap-4 animate-fadein h-full">
         <Grid rows={18} cols={3} imbedParagraph={false} animate={true} />
       </div>
-      <div className="hidden md:flex justify-center h-32 align-middle">
+      <div className="hidden md:flex justify-center h-32 align-middle animate-fadein">
         <p className="place-self-center text-center max-w-lg text-xl italic ">
           I&#39;m Robert, a frontend developer passionate about elegant code and
           beautiful design.
