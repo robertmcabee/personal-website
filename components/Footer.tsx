@@ -8,7 +8,7 @@ function Footer() {
           aria-label="Twitter"
           rel="noreferrer"
         >
-          <li className="hover:shadow-2xl bg-green-200 hover:bg-green-400 duration-300 h-min w-min rounded-full p-3">
+          <li className="hover:shadow-lg bg-green-200 hover:bg-green-400 duration-300 h-min w-min rounded-full p-3 border-4 border-base hover:border-green-200">
             <svg
               width="24"
               height="24"
@@ -32,7 +32,7 @@ function Footer() {
           aria-label="Github"
           rel="noreferrer"
         >
-          <li className="hover:shadow-2xl bg-green-200 hover:bg-green-400 duration-300 h-min w-min rounded-full p-3">
+          <li className="hover:shadow-lg bg-green-200 hover:bg-green-400 duration-300 h-min w-min rounded-full p-3 border-4 border-base hover:border-green-200">
             <svg
               width="24"
               height="24"
@@ -60,7 +60,9 @@ function Footer() {
       <p className="pt-3 text-center sm:text-lg font-bold">
         Let&#39;s build something together.
       </p>
-      <p className="pt-3 text-center opacity-50">©Robert McAbee</p>
+      <p className="pt-3 text-center opacity-50">
+        © {new Date().getFullYear()} Robert McAbee
+      </p>
     </footer>
   );
 }

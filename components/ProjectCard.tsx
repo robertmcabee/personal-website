@@ -14,7 +14,7 @@ function ProjectCard({
   liveURL,
 }: ProjectCardProps) {
   return (
-    <article className="max-w-md bg-white rounded-3xl shadow-2xl flex flex-col">
+    <article className="max-w-md bg-white rounded-3xl shadow-2xl hover:shadow-cyan-500 duration-300 flex flex-col">
       <div className="relative rounded-t-3xl h-48 bg-black">{children}</div>
       <h3 className="py-4 px-6 text-lg font-bold">{title}</h3>
       <p className="mb-auto px-6">{description}</p>

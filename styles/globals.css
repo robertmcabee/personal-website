@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: rgb(255 255 255);
+}
+
 @layer base {
   [data-theme="default"] {
     --color-base: 255 255 255; /* White */

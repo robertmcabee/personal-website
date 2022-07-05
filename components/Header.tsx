@@ -10,11 +10,13 @@ function Header() {
       <h2 className="uppercase text-3xl md:text-6xl font-bold text-center">
         Let&#39;s get to work.
       </h2>
+      {/* Mobile */}
       <div className="flex pt-4 md:hidden w-full justify-center gap-4 animate-fadein h-full">
         <Grid rows={5} cols={6} imbedParagraph={true} animate={true} />
       </div>
+      {/* Desktop */}
       <div className="pt-4 md:pt-16 max-h-min hidden md:flex w-full justify-center gap-4 animate-fadein h-full">
-        <Grid rows={12} cols={3} imbedParagraph={false} animate={true} />
+        <Grid rows={18} cols={3} imbedParagraph={false} animate={true} />
       </div>
       <div className="hidden md:flex justify-center h-32 align-middle">
         <p className="place-self-center text-center max-w-lg text-xl italic ">
@@ -23,7 +25,7 @@ function Header() {
         </p>
       </div>
       <div className=" max-h-min hidden md:flex w-full justify-center gap-4 animate-fadein h-full">
-        <Grid rows={12} cols={2} imbedParagraph={false} animate={true} />
+        <Grid rows={18} cols={2} imbedParagraph={false} animate={true} />
       </div>
     </header>
   );
