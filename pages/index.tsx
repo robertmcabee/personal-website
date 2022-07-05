@@ -7,6 +7,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -26,10 +27,11 @@ const Home = () => {
         </div>
         <Projects />
         <div className="w-full flex justify-center mt-16">
-          <Grid rows={12} cols={2} imbedParagraph={false} animate={false} />
+          <Grid rows={18} cols={2} imbedParagraph={false} animate={false} />
         </div>
         <Contact />
       </main>
+      <Footer />
       <div className="bg-primary500 border-primary500 w-0 h-0"></div>
       <div className="bg-secondary500 border-secondary500 w-0 h-0"></div>
     </div>
