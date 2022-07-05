@@ -7,17 +7,144 @@ body {
 }
 
 @layer base {
-  [data-theme="default"] {
-    --color-base: 255 255 255; /* White */
-    --color-primary400: 143 226 174; /* Light Green */
+  [data-primary="green"] {
+    --color-primary50: 240 253 244; /* Light Green / Off-White */
+    --color-primary100: 220 252 231; /* Light Green */
+    --color-primary200: 187 247 208; /* Light Green */
+    --color-primary300: 134 239 172; /* Light Green */
+    --color-primary400: 74 222 128; /* Light Green */
     --color-primary500: 34 197 94; /* Green */
-    --color-secondary400: 130 218 233; /* Light Cyan */
-    --color-secondary500: 6 182 212; /* Cyan */
+    --color-primary600: 22 163 74; /* Green */
+    --color-primary700: 21 128 61; /* Dark Green */
+    --color-primary800: 22 101 52; /* Dark Green */
+    --color-primary900: 20 83 45; /* Dark Green */
   }
 
-  [data-theme="alternate"] {
-    --color-base: 0 0 0;
-    --color-primary500: 239 68 68; /* Red */
+  [data-primary="rose"] {
+    --color-primary50: 255 241 242; /* Light Red / Off-White */
+    --color-primary100: 255 228 230; /* Light Red */
+    --color-primary200: 254 205 211; /* Light Red */
+    --color-primary300: 253 164 175; /* Light Red */
+    --color-primary400: 251 113 133; /* Light Red */
+    --color-primary500: 244 63 94; /* Red */
+    --color-primary600: 225 29 72; /* Red */
+    --color-primary700: 190 18 60; /* Dark Red */
+    --color-primary800: 159 18 57; /* Dark Red */
+    --color-primary900: 136 19 55; /* Dark Red */
+  }
+
+  [data-primary="cyan"] {
+    --color-primary50: 236 254 255; /* Light Cyan / Off-White */
+    --color-primary100: 207 250 254; /* Light Cyan */
+    --color-primary200: 165 243 252; /* Light Cyan */
+    --color-primary300: 103 232 249; /* Light Cyan */
+    --color-primary400: 34 211 238; /* Light Cyan */
+    --color-primary500: 6 182 212; /* Cyan */
+    --color-primary600: 8 145 178; /* Cyan */
+    --color-primary700: 14 116 144; /* Dark Cyan */
+    --color-primary800: 21 94 117; /* Dark Cyan */
+    --color-primary900: 22 78 99; /* Dark Cyan */
+  }
+
+  [data-primary="purple"] {
+    --color-primary50: 250 245 255; /* Light Purple / Off-White */
+    --color-primary100: 243 232 255; /* Light Purple */
+    --color-primary200: 233 213 255; /* Light Purple */
+    --color-primary300: 216 180 254; /* Light Purple */
+    --color-primary400: 192 132 252; /* Light Purple */
+    --color-primary500: 168 85 247; /* Purple */
+    --color-primary600: 147 51 234; /* Purple */
+    --color-primary700: 126 34 206; /* Dark Purple */
+    --color-primary800: 107 33 168; /* Dark Purple */
+    --color-primary900: 88 28 135; /* Dark Purple */
+  }
+
+  [data-primary="orange"] {
+    --color-primary50: 255 247 237; /* Light orange / Off-White */
+    --color-primary100: 255 237 213; /* Light orange */
+    --color-primary200: 254 215 170; /* Light orange */
+    --color-primary300: 253 186 116; /* Light orange */
+    --color-primary400: 251 146 60; /* Light orange */
+    --color-primary500: 249 115 22; /* orange */
+    --color-primary600: 234 88 12; /* orange */
+    --color-primary700: 194 65 12; /* Dark orange */
+    --color-primary800: 154 52 18; /* Dark orange */
+    --color-primary900: 124 45 18; /* Dark orange */
+  }
+
+  [data-secondary="green"] {
+    --color-secondary50: 240 253 244; /* Light Green / Off-White */
+    --color-secondary100: 220 252 231; /* Light Green */
+    --color-secondary200: 187 247 208; /* Light Green */
+    --color-secondary300: 134 239 172; /* Light Green */
+    --color-secondary400: 74 222 128; /* Light Green */
+    --color-secondary500: 34 197 94; /* Green */
+    --color-secondary600: 22 163 74; /* Green */
+    --color-secondary700: 21 128 61; /* Dark Green */
+    --color-secondary800: 22 101 52; /* Dark Green */
+    --color-secondary900: 20 83 45; /* Dark Green */
+  }
+
+  [data-secondary="rose"] {
+    --color-secondary50: 255 241 242; /* Light Red / Off-White */
+    --color-secondary100: 255 228 230; /* Light Red */
+    --color-secondary200: 254 205 211; /* Light Red */
+    --color-secondary300: 253 164 175; /* Light Red */
+    --color-secondary400: 251 113 133; /* Light Red */
+    --color-secondary500: 244 63 94; /* Red */
+    --color-secondary600: 225 29 72; /* Red */
+    --color-secondary700: 190 18 60; /* Dark Red */
+    --color-secondary800: 159 18 57; /* Dark Red */
+    --color-secondary900: 136 19 55; /* Dark Red */
+  }
+
+  [data-secondary="cyan"] {
+    --color-secondary50: 236 254 255; /* Light Cyan / Off-White */
+    --color-secondary100: 207 250 254; /* Light Cyan */
+    --color-secondary200: 165 243 252; /* Light Cyan */
+    --color-secondary300: 103 232 249; /* Light Cyan */
+    --color-secondary400: 34 211 238; /* Light Cyan */
+    --color-secondary500: 6 182 212; /* Cyan */
+    --color-secondary600: 8 145 178; /* Cyan */
+    --color-secondary700: 14 116 144; /* Dark Cyan */
+    --color-secondary800: 21 94 117; /* Dark Cyan */
+    --color-secondary900: 22 78 99; /* Dark Cyan */
+  }
+
+  [data-secondary="purple"] {
+    --color-secondary50: 250 245 255; /* Light Purple / Off-White */
+    --color-secondary100: 243 232 255; /* Light Purple */
+    --color-secondary200: 233 213 255; /* Light Purple */
+    --color-secondary300: 216 180 254; /* Light Purple */
+    --color-secondary400: 192 132 252; /* Light Purple */
     --color-secondary500: 168 85 247; /* Purple */
+    --color-secondary600: 147 51 234; /* Purple */
+    --color-secondary700: 126 34 206; /* Dark Purple */
+    --color-secondary800: 107 33 168; /* Dark Purple */
+    --color-secondary900: 88 28 135; /* Dark Purple */
+  }
+
+  [data-secondary="orange"] {
+    --color-secondary50: 255 247 237; /* Light orange / Off-White */
+    --color-secondary100: 255 237 213; /* Light orange */
+    --color-secondary200: 254 215 170; /* Light orange */
+    --color-secondary300: 253 186 116; /* Light orange */
+    --color-secondary400: 251 146 60; /* Light orange */
+    --color-secondary500: 249 115 22; /* orange */
+    --color-secondary600: 234 88 12; /* orange */
+    --color-secondary700: 194 65 12; /* Dark orange */
+    --color-secondary800: 154 52 18; /* Dark orange */
+    --color-secondary900: 124 45 18; /* Dark orange */
   }
 }
+
+/* --color-primary50:  ; 
+--color-primary100: ; 
+--color-primary200: ; 
+--color-primary300: ; 
+--color-primary400: ; 
+--color-primary500: ; 
+--color-primary600: ; 
+--color-primary700: ; 
+--color-primary800: ; 
+--color-primary900: ;  */

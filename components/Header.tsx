@@ -3,7 +3,7 @@ const Grid = dynamic(() => import("./Grid"), { ssr: false }); //disabling ssr be
 
 function Header() {
   return (
-    <header className="bg-base py-8 md:py-16 text-cyan-600">
+    <header className="bg-white py-8 md:py-16 text-secondary600">
       <h2 className="uppercase text-3xl md:text-6xl font-bold text-center">
         Nice to meet you.
       </h2>

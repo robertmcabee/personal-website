@@ -1,7 +1,7 @@
 function Skills() {
   return (
     <div className="py-8 md:py-16 px-8 md:px-0 w-full flex justify-center">
-      <div className="">
+      <div>
         <h2 className="text-2xl md:text-3xl font-bold">Technologies</h2>
 
         <p className="pt-4">

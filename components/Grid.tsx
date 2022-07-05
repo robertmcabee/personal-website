@@ -102,7 +102,7 @@ function Grid({ rows, cols, imbedParagraph, animate }: Props) {
           });
         })}
         {imbedParagraph ? (
-          <div className="absolute opacity-100 translate-y-[150%] bg-base w-64 sm:w-72 h-32 sm:h-48">
+          <div className="absolute opacity-100 translate-y-[150%] bg-white w-64 sm:w-72 h-32 sm:h-48">
             <p className="px-8 py-4 sm:py-10 sm:text-lg text-center">
               I&#39;m Robert, a frontend developer passionate about elegant code
               and beautiful design.

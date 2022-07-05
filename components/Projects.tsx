@@ -7,7 +7,7 @@ import frontendresourcesImage from "../images/frontendresources-screenshot.webp"
 
 function Projects() {
   return (
-    <section className="md:px-16 px-8 md:pt-8 text-cyan-900">
+    <section className="md:px-16 px-8 md:pt-8 text-secondary900">
       <div className="py-8 flex justify-center">
         <div className="max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-bold">Projects</h2>
@@ -15,7 +15,7 @@ function Projects() {
             These are a few of my past projects. More projects and additional
             information can be found at my{" "}
             <a
-              className="underline hover:text-cyan-600 transition-colors"
+              className="underline hover:text-secondary600 transition-colors"
               href="https://github.com/robertmcabee"
               target="_blank"
               rel="noreferrer"
