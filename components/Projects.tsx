@@ -13,8 +13,16 @@ function Projects() {
           <h2 className="text-2xl md:text-3xl font-bold">Projects</h2>
           <p className="pt-4">
             These are a few of my past projects. More projects and additional
-            information can be found at my Github profile, if you&#39;re
-            curious.
+            information can be found at my{" "}
+            <a
+              className="underline hover:text-cyan-600 transition-colors"
+              href="https://github.com/robertmcabee"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github profile,
+            </a>{" "}
+            if you&#39;re curious.
           </p>
         </div>
       </div>

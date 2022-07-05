@@ -5,9 +5,18 @@ function Contact() {
         <h2 className="text-2xl md:text-3xl font-bold">Contact</h2>
         <p className="pt-4">
           Let&#39;s talk! Whether you want to talk business or if you just want
-          to say hi, my inbox is always open. You can also dm me on Twitter if
-          that&#39;s more your style.
+          to say hi, my inbox is always open. You can also dm me on{" "}
+          <a
+            className="underline hover:text-green-600 transition-colors"
+            href="https://twitter.com/RobertTheMcAbee"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Twitter
+          </a>{" "}
+          if that&#39;s more your style.
         </p>
+
         <form name="contact" method="POST" data-netlify="true">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-12">
             <div className="flex flex-col">
