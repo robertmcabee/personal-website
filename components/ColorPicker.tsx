@@ -22,7 +22,7 @@ function ColorPicker({
 
   return (
     <div
-      className="fixed bottom-0 sm:top-0 max-h-min sm:translate-y-0 bg-white rounded-r-full shadow-xl my-4 grid grid-cols-6 gap-2 max-w-fit z-50 py-4 duration-500 text-primary800"
+      className="fixed bottom-0 sm:top-0 max-h-[8.5rem] sm:translate-y-0 bg-white rounded-r-full shadow-xl my-4 grid grid-cols-6 gap-2 max-w-fit z-50 py-4 duration-500 text-primary800"
       style={
         visible
           ? { transform: "translate(0%)" }
