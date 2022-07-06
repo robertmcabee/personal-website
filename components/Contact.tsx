@@ -1,4 +1,8 @@
+import { useRouter } from "next/router";
+
 function Contact() {
+  const router = useRouter();
+
   return (
     <div className="py-8 md:py-16 md:px-8 flex justify-center duration-300">
       <div className="max-w-4xl bg-primary200 text-primary900 p-8 md:p-16 rounded-2xl shadow-2xl">
@@ -17,7 +21,12 @@ function Contact() {
           if that&#39;s more your style.
         </p>
 
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/form-submission"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-12">
             <div className="flex flex-col">
               <label className="font-bold" htmlFor="name">
@@ -68,6 +77,13 @@ function Contact() {
               type="submit"
               className="bg-primary400 max-w-min px-4 shadow-md shadow-primary500 hover:shadow-none py-2 mt-2 rounded-2xl focus:outline-4 font-bold outline-primary600 hover:bg-primary500 cursor-pointer transition-all duration-300"
               value="Send Message"
+            />
+            <input className="hidden" name="bot-field" />
+            <input
+              className="hidden"
+              type="hidden"
+              name="form-name"
+              value="contact"
             />
           </div>
         </form>
