@@ -39,8 +39,8 @@ const Home = () => {
       />
       <Header />
       <main className="bg-base animate-fadein">
-        <div className="flex justify-center bg-secondary200 text-secondary900 shadow-inner">
-          <div className=" max-w-4xl md:flex md:mx-16 gap-8">
+        <div className="flex justify-center bg-secondary200 text-secondary900 transition-colors shadow-inner">
+          <div className=" max-w-4xl md:flex md:mx-16 gap-16">
             <About />
             <Skills />
           </div>
