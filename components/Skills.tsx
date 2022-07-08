@@ -1,6 +1,15 @@
+import { useInView } from "react-intersection-observer";
+
 function Skills() {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.8,
+  });
   return (
-    <div className="py-8 md:py-16 px-8 md:px-0 w-full flex justify-center">
+    <div
+      ref={ref}
+      style={inView ? { opacity: "100%" } : { opacity: "10%" }}
+      className="py-8 md:py-16 px-8 md:px-0 w-full flex justify-center duration-1000"
+    >
       <div>
         <h2 className="text-2xl md:text-3xl font-bold">Technologies</h2>
 

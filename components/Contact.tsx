@@ -1,10 +1,20 @@
-import { useRouter } from "next/router";
+import { useInView } from "react-intersection-observer";
 
 function Contact() {
-  const router = useRouter();
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+  });
 
   return (
-    <div className="py-8 md:py-16 md:px-8 flex justify-center duration-300">
+    <div
+      ref={ref}
+      style={
+        inView
+          ? { opacity: "100%", transform: "translate(0%, 0%)" }
+          : { opacity: "10%", transform: "translate(0%, 10%)" }
+      }
+      className="py-8 md:py-16 md:px-8 flex justify-center duration-1000"
+    >
       <div className="max-w-4xl bg-primary200 text-primary900 p-8 md:p-16 rounded-2xl shadow-2xl">
         <h2 className="text-2xl md:text-3xl font-bold">Contact</h2>
         <p className="pt-4">
