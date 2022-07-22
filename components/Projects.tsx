@@ -32,10 +32,10 @@ function Projects() {
           <ProjectCard
             title={"EasyHabit"}
             description={
-              "An intuitive open-source habit tracker built with Typescript, React and the Date-FNS library."
+              "An intuitive full-stack habit tracker built with Typescript and React, with a Supabase backend for user storage and authentication."
             }
             githubURL={"https://github.com/robertmcabee/EasyHabit"}
-            liveURL={"https://easyhabit.netlify.app/"}
+            liveURL={"https://easyhabit.vercel.app/"}
           >
             <Image
               src={easyhabitImage}

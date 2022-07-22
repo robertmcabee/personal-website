@@ -7,6 +7,7 @@ function Contact() {
 
   return (
     <div
+      id="contact"
       ref={ref}
       style={
         inView
