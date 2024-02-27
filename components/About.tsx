@@ -13,16 +13,14 @@ function About() {
     >
       <div className="">
         <h2 className="text-2xl md:text-3xl font-bold">About Me</h2>
-
         <p className="pt-4">
-          I&#39;m from Bozeman, MT. When I&#39;m not coding I love hiking,
-          listening to music and video games.
+          I&#39;m a self-taught developer turned computer science student.
+          I&#39;m passionate about clean, maintainable code and clean design.
         </p>
         <p className="pt-4">
-          I switched careers from title insurance to tech to challenge myself
-          and do what I love. From the title industry, I learned to work with a
-          team and coordinate with clients with to meet high standards of
-          professionalism and detail.
+          I&#39;m from Bozeman, MT. When I&#39;m not coding you can find me
+          exploring new hiking trails, digging for vinyl downtown, or walking my
+          dog, Juniper.
         </p>
       </div>
     </div>
