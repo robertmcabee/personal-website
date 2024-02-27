@@ -20,18 +20,8 @@ function Contact() {
         <h2 className="text-2xl md:text-3xl font-bold">Contact</h2>
         <p className="pt-4">
           Let&#39;s talk! Whether you want to talk business or if you just want
-          to say hi, my inbox is always open. You can also dm me on{" "}
-          <a
-            className="underline hover:text-primary600 transition-colors"
-            href="https://twitter.com/RobertTheMcAbee"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Twitter
-          </a>{" "}
-          if that&#39;s more your style.
+          to say hi, my inbox is always open.
         </p>
-
         <form
           name="contact"
           method="POST"
